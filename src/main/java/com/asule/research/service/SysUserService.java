@@ -1,5 +1,7 @@
 package com.asule.research.service;
 
+import com.asule.research.common.BaseResponse;
+import com.asule.research.dto.User;
 import com.asule.research.entity.SysUser;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -12,5 +14,5 @@ import org.springframework.data.domain.PageRequest;
  */
 public interface SysUserService {
 
-
+    public BaseResponse login(User user);
 }

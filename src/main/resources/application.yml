@@ -17,3 +17,7 @@ mybatis:
     map-underscore-to-camel-case: true
     # 打印 SQL 日志（调试用）
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+jwt:
+  secret-key: lvswwE+4HxZ0aFZCetxaK0qVSbPhDVltwyyzIPSD2Aw=
