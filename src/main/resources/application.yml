@@ -1,2 +1,19 @@
 server:
-  port: 8080
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: qwerty
+    url: jdbc:mysql://192.168.2.200:3306/deep_search?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+
+mybatis:
+  # 实体类别名包（简化 XML 中 resultType 写法）
+  type-aliases-package: com.asule.research.entity
+  # Mapper XML 文件位置（XML 版需要配置）
+  mapper-locations: classpath:mappers/*.xml
+  # 开启驼峰命名自动转换（如数据库 user_name → 实体类 userName）
+  configuration:
+    map-underscore-to-camel-case: true
+    # 打印 SQL 日志（调试用）
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
