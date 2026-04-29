@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: qwerty
-    url: jdbc:mysql://192.168.2.200:3306/deep_search?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://8.148.65.21:3306/deep_search?useSSL=true&useUnicode=true&characterEncoding=UTF-8
 
 mybatis:
   # 实体类别名包（简化 XML 中 resultType 写法）
